@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Server Name - Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Khám phá các máy chủ Minecraft tốt nhất với mô tả chi tiết, đánh giá người chơi và thống kê máy chủ trực tiếp. Tìm kiếm cuộc phiêu lưu tiếp theo của bạn ngay hôm nay!">
+    <meta name="keywords" content="Minecraft, server, gaming, community, multiplayer, adventure, survival, factions, skyblock">
+    
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="sonic-loader">
+        <div class="sonic-animation"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+
+            <!-- Put your logo here -->
+            <img src="assets/images/logo.png" alt="Server Logo" class="logo-img">
+            <span class="config-server-name"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#gamemodes">Chế độ chơi</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#vote">Bình chọn</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <!-- <h1></h1> -->
+            <h2 class="server-name config-server-name"></h2>
+            <p>Tham gia cộng đồng Minecraft phát triển của chúng tôi với trải nghiệm chơi độc đáo, đội ngũ thân thiện và các sự kiện thường xuyên.</p>
+            <p class="join-text">Tham gia và chơi cùng bạn bè của bạn.</p>
+            <div class="hero-buttons">
+                <button class="btn primary copyIP">Sao chép IP</button>
+                <a href="#about"><button class="btn secondary">Xem thêm</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Về Máy Chủ Của Chúng Tôi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Chào mừng bạn đến với <span class="config-server-name"></span>, trải nghiệm Minecraft tuyệt vời nhất! Máy chủ của chúng tôi cung cấp nhiều chế độ chơi phù hợp với mọi phong cách và sở thích của người chơi. Dù bạn là người xây dựng, chiến đấu hay khám phá, chúng tôi đều có điều gì đó dành cho bạn.</p>
+                    <p>Đội ngũ quản trị viên và điều hành viên tận tâm của chúng tôi luôn làm việc chăm chỉ để đảm bảo môi trường công bằng, vui vẻ và an toàn cho tất cả người chơi. Chúng tôi thường xuyên cập nhật máy chủ với nội dung và tính năng mới để giữ cho trải nghiệm luôn mới mẻ và hấp dẫn.</p>
+                    <p>Hãy tham gia cộng đồng ngày càng lớn mạnh của chúng tôi và trở thành một phần đặc biệt!</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/img1.jpg" alt="Server Showcase">
+                </div>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Bảo vệ chống gian lận</h3>
+                    <p>Hệ thống bảo vệ tiên tiến đảm bảo chơi công bằng</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-server"></i>
+                    <h3>Hoạt động 99.9% thời gian</h3>
+                    <p>Máy chủ ổn định với thời gian ngừng hoạt động tối thiểu</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Cộng đồng năng động</h3>
+                    <p>Người chơi thân thiện và đội ngũ hỗ trợ nhiệt tình</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Sự kiện thường xuyên</h3>
+                    <p>Sự kiện hàng tuần với phần thưởng hấp dẫn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modes Section -->
+    <section id="gamemodes" class="gamemodes">
+        <div class="container">
+            <h2 class="section-title">Chế độ chơi</h2>
+            <p class="section-description">Khám phá nhiều chế độ chơi đa dạng, mỗi chế độ mang lại trải nghiệm Minecraft độc đáo</p>
+
+            <div class="gamemode-grid">
+                <div class="gamemode-card">
+                    <div class="gamemode-image">
+                        <img src="assets/images/img2.jpg" alt="Survival">
+                    </div>
+                    <div class="gamemode-content">
+                        <h3>Sinh tồn</h3>
+                        <p>Trải nghiệm Minecraft đúng nghĩa. Thu thập tài nguyên, xây dựng công trình và sinh tồn trước quái vật trong thế giới sinh tồn nâng cao của chúng tôi.</p>
+                        <ul class="gamemode-features">
+                            <li><i class="fas fa-check"></i> Tạo địa hình tùy chỉnh</li>
+                            <li><i class="fas fa-check"></i> Hệ thống kinh tế</li>
+                            <li><i class="fas fa-check"></i> Chiếm đất</li>
+                        </ul>
+                        <button class="btn primary copyIP">Chơi ngay</button>
+                    </div>
+                </div>
+
+                <div class="gamemode-card">
+                    <div class="gamemode-image">
+                        <img src="assets/images/img5.png" alt="SkyBlock">
+                    </div>
+                    <div class="gamemode-content">
+                        <h3>SkyBlock</h3>
+                        <p>Bắt đầu hành trình trên một hòn đảo bay và mở rộng lãnh thổ của bạn. Mở khóa các đảo mới, hoàn thành thử thách và trở thành bậc thầy SkyBlock.</p>
+                        <ul class="gamemode-features">
+                            <li><i class="fas fa-check"></i> Đảo tùy chỉnh</li>
+                            <li><i class="fas fa-check"></i> Cấp độ đảo</li>
+                            <li><i class="fas fa-check"></i> Thử thách độc đáo</li>
+                        </ul>
+                        <button class="btn primary copyIP">Chơi ngay</button>
+                    </div>
+                </div>
+
+                <div class="gamemode-card">
+                    <div class="gamemode-image">
+                        <img src="assets/images/img8.png" alt="Factions">
+                    </div>
+                    <div class="gamemode-content">
+                        <h3>Factions</h3>
+                        <p>Liên minh, xây dựng căn cứ và chiến đấu với các faction đối thủ. Thống trị máy chủ bằng chiến lược, sức mạnh và tinh thần đồng đội.</p>
+                        <ul class="gamemode-features">
+                            <li><i class="fas fa-check"></i> Phù phép tùy chỉnh</li>
+                            <li><i class="fas fa-check"></i> Hệ thống cướp bóc</li>
+                            <li><i class="fas fa-check"></i> Hệ thống sức mạnh</li>
+                        </ul>
+                        <button class="btn primary copyIP">Chơi ngay</button>
+                    </div>
+                </div>
+
+                <div class="gamemode-card">
+                    <div class="gamemode-image">
+                        <img src="assets/images/img7.png" alt="Lifesteal">
+                    </div>
+                    <div class="gamemode-content">
+                        <h3>LifeSteal</h3>
+                        <p>Chiến đấu với người khác để cướp trái tim và trở thành người mạnh nhất máy chủ.</p>
+                        <ul class="gamemode-features">
+                            <li><i class="fas fa-check"></i> Hệ thống khu đất</li>
+                            <li><i class="fas fa-check"></i> Công cụ WorldEdit</li>
+                            <li><i class="fas fa-check"></i> Thi đấu xây dựng</li>
+                        </ul>
+                        <button class="btn primary copyIP">Chơi ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="discord">
+        <div class="container">
+            <div class="discord-content">
+                <div class="discord-text">
+            <h2 class="section-title">Tham Gia Discord Của Chúng Tôi</h2>
+            <p>Kết nối với cộng đồng, nhận cập nhật máy chủ, tham gia sự kiện và trò chuyện với người chơi khác!</p>
+            <ul class="discord-features">
+                <li><i class="fas fa-bell"></i> Thông báo máy chủ tức thì</li>
+                <li><i class="fas fa-gift"></i> Quà tặng độc quyền</li>
+                <li><i class="fas fa-headset"></i> Hỗ trợ trực tiếp từ đội ngũ</li>
+                <li><i class="fas fa-users"></i> Tìm đồng đội và bạn bè</li>
+            </ul>
+            <a href="#" target="_blank" class="btn discord-btn config-discord-btn">
+                <i class="fab fa-discord"></i> Tham gia Discord
+            </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vote Section -->
+    <section id="vote" class="vote">
+        <div class="container">
+            <h2 class="section-title">Bình Chọn Cho Máy Chủ Của Chúng Tôi</h2>
+            <p class="section-description">Ủng hộ máy chủ bằng cách bình chọn mỗi ngày và nhận phần thưởng hấp dẫn trong game!</p>
+
+            <div class="vote-sites">
+
+                <!-- Put your voting site URL in the herf  -->
+
+                <a href="html/vote.html">
+                    <div class="vote-card">
+                        <h3>Truy cập trang vote ngay!</h3>
+                        <p>Vote cho <span class="config-server-name"></span> để giúp phát triển máy chủ</p>
+
+                        <img src="assets/Vote-link-Imgs/gust_0.png" alt="Voting Site">
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+
+
+                    <!-- Put Your Logo Here -->
+                    <img src="assets/images/Logo.png" alt="Logo Máy Chủ" class="logo-img">
+                    <h3 class="config-server-name"></h3>
+                    <p>Trải nghiệm Minecraft tuyệt vời nhất</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#gamemodes">Chế độ chơi</a></li>
+                        <li><a href="#discord">Discord</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="html/rules.html">Nội quy</a></li>
+                        <li><a href="html/staff.html">Đội ngũ</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="html/vote.html">Vote</a></li>
+                        <li><a href="html/FAQ.html">Hỏi đáp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Liên hệ</h3>
+                    <p class="config-support-email">
+                        <i class="fas fa-envelope"></i> support@your-server.com
+                    </p>
+                    <p class="config-discord-footer">
+                        <i class="fab fa-discord"></i> discord.gg/Your-server-link
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span class="config-server-name"></span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="JS/home.js"></script>
+    <script src="JS/audio.js"></script>
+    <script src="JS/audio.js"></script>
+</body>
+
+</html>
