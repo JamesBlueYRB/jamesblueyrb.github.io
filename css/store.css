@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e7db07;
+    border-radius: 10px;
+    border: 2px solid #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bfae04;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #0d0d0d3f;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #e7db07 !important;
+}
+
+.btn-login {
+    background-color: #e7db07;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.btn-login:hover {
+    background-color: #bfae04;
+    color: #fff;
+}
+.store-hero-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../image/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    overflow: hidden;
+}
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.hero-character {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 13px;
+}
+.hero-character:hover {
+    background-color: #7d7929d1;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #e7db07;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    color: white;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.btn-play-now {
+    background-color: #e7db07;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-play-now:hover {
+    background-color: #bfae04;
+    color: #fff;
+}
+
+.card {
+    border: 1px solid #333;
+    background-color: #222;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 255, 0, 0.689);
+}
+
+.card-header {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main-footer {
+    background-color: #121212;
+    color: #ccc;
+    border-top: 1px solid #333;
+}
+
+.footer-heading {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #e7db07;
+}
+
+.btn-social {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-social:hover {
+    background-color: #e7db07;
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #0d0d0d;
+    border-top: 1px solid #333;
+}
+
+.copyright, .powered-by {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.powered-by {
+    color: #e7db07;
+    text-decoration: none;
+}
+
+.powered-by:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,70 @@
+.auth-container {
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e7db07;
+    border-radius: 10px;
+    border: 2px solid #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bfae04;
+}
+.auth-container h2 {
+    margin-bottom: 25px;
+}
+
+.auth-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-auth {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn-login-option {
+    background-color: #e7db07;
+    color: #fff;
+}
+
+.btn-login-option:hover {
+    background-color: #bfae04;
+    color: #fff;
+}
+
+.btn-register-option {
+    background-color: #333;
+    color: #e7db07;
+    border: 2px solid #e7db07;
+}
+
+.btn-register-option:hover {
+    background-color: #444;
+    color: #e7db07;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

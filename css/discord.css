@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e7db07;
+    border-radius: 10px;
+    border: 2px solid #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bfae04;
+}
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar {
+    background-color: #0d0d0d3f;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #e7db07 !important;
+}
+
+.btn-login {
+    background-color: #e7db07;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.btn-login:hover {
+    background-color: #bfae04;
+    color: #fff;
+}
+
+.discord-hero-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../image/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.305);
+    z-index: 1;
+}
+
+.discord-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.discord-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.discord-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn-join-discord {
+    background-color: #e1dc33;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-join-discord:hover {
+    background-color: #677bc4;
+    color: #fff;
+}
+
+.discord-icon {
+    margin-right: 10px;
+}
+
+.discord-info-section {
+    padding: 80px 10%;
+    background-color: #0d0d0d;
+}
+
+.discord-info-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 251, 27, 0.808);
+}
+
+.info-card i {
+    font-size: 3rem;
+    color: #fff700;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.main-footer {
+    background-color: #121212;
+    color: #ccc;
+    border-top: 1px solid #333;
+}
+
+.footer-heading {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #e7db07;
+}
+
+.btn-social {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-social:hover {
+    background-color: #e7db07;
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #0d0d0d;
+    border-top: 1px solid #333;
+}
+
+.copyright, .powered-by {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.powered-by {
+    color: #e7db07;
+    text-decoration: none;
+}
+
+.powered-by:hover {
+    text-decoration: underline;
+}
