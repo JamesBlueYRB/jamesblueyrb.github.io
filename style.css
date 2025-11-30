@@ -67,8 +67,6 @@ nav {
     font-size: 1.8rem;
     font-weight: 800;
     background: linear-gradient(45deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
 
@@ -1029,5 +1027,6 @@ select {
 #add-log-form button[type="submit"]:hover {
     background: var(--color-primary-dark);
 }
+
 
 
