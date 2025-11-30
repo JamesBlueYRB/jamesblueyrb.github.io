@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    </div>
     <nav>
         <div class="logo">VieMC ☁️</div>
         <div class="nav-links">
@@ -28,26 +27,28 @@
                 <button class="btn" id="auth-btn">Tài khoản</button>
                 <div class="auth-dropdown" id="auth-dropdown">
                     <div class="auth-tabs">
-                        <span class="auth-tab active" id="tab-login">Đăng nhập</span>
-                        <span class="auth-tab" id="tab-register">Đăng ký</span>
+                        <button class="tab-button active" data-tab="login-tab">Đăng Nhập</button>
+                        <button class="tab-button" data-tab="register-tab">Đăng Ký</button>
                     </div>
-
-                    <div class="auth-form active" id="form-login">
-                        <input type="text" placeholder="Tên đăng nhập" id="login-user">
-                        <input type="password" placeholder="Mật khẩu" id="login-pass">
-                        <button class="btn" style="width: 100%;" id="btn-login">Đăng nhập</button>
+                    <div class="tab-content" id="login-tab">
+                        <form id="login-form">
+                            <input type="text" id="login-username" placeholder="Tên đăng nhập" required>
+                            <input type="password" id="login-password" placeholder="Mật khẩu" required>
+                            <button type="submit" class="btn">Đăng nhập</button>
+                        </form>
                     </div>
-
-                    <div class="auth-form" id="form-register">
-                        <input type="text" placeholder="Tên đăng nhập" id="reg-user">
-                        <input type="password" placeholder="Mật khẩu" id="reg-pass">
-                        <input type="password" placeholder="Nhập lại mật khẩu" id="reg-pass-confirm">
-                        <button class="btn" style="width: 100%;" id="btn-register">Đăng ký</button>
+                    <div class="tab-content hidden" id="register-tab">
+                        <form id="register-form">
+                            <input type="text" id="register-username" placeholder="Tên đăng nhập" required>
+                            <input type="password" id="register-password" placeholder="Mật khẩu" required>
+                            <input type="password" id="register-confirm-password" placeholder="Nhập lại Mật khẩu" required>
+                            <button type="submit" class="btn">Đăng ký</button>
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <button class="theme-toggle" id="theme-toggle">🌙</button>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
         </div>
     </nav>
 
@@ -97,6 +98,6 @@
     </div>
     <span class="version-display">v1.0.0</span>
     </footer>
-    </script>rc="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
