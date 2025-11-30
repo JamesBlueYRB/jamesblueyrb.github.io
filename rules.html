@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>VieMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">VieMC ⛏️</div>
+        <div class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="guide.html">Hướng Dẫn</a>
+            <a href="update-logs.html">Update Logs</a>
+            <a href="blog.html">Blog</a>
+            <a href="rules.html">Rules</a>
+            <a href="admin.html" id="nav-admin" style="display: none;">Admin Panel</a>
+
+            <div class="logged-in-container" id="logged-in-container" style="display: none;">
+                <span id="user-display"></span>
+                <button class="btn" id="btn-logout" style="padding: 8px 15px;">Đăng xuất</button>
+            </div>
+
+            <div class="auth-container">
+                <button class="btn" id="auth-btn">Tài khoản</button>
+                <div class="auth-dropdown" id="auth-dropdown">
+                    <div class="auth-tabs">
+                        <span class="auth-tab active" id="tab-login">Đăng nhập</span>
+                        <span class="auth-tab" id="tab-register">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form active" id="form-login">
+                        <input type="text" placeholder="Tên đăng nhập" id="login-user">
+                        <input type="password" placeholder="Mật khẩu" id="login-pass">
+                        <button class="btn" style="width: 100%;" id="btn-login">Đăng nhập</button>
+                    </div>
+
+                    <div class="auth-form" id="form-register">
+                        <input type="text" placeholder="Tên đăng nhập" id="reg-user">
+                        <input type="password" placeholder="Mật khẩu" id="reg-pass">
+                        <input type="password" placeholder="Nhập lại mật khẩu" id="reg-pass-confirm">
+                        <button class="btn" style="width: 100%;" id="btn-register">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1>📜 Quy Tắc Chính Thức Của VieMC 🛡️</h1>
+        <p class="intro-text">Để đảm bảo môi trường chơi game công bằng, lành mạnh và vui vẻ cho tất cả người chơi, vui lòng đọc kỹ và tuân thủ các quy tắc sau. Việc vi phạm có thể dẫn đến hình phạt vĩnh viễn.</p>
+        
+        <div class="rule-section">
+            <h2>1. Quy Tắc Chung & Ứng Xử (General Conduct)</h2>
+            <ol>
+                <li>Không được sử dụng ngôn ngữ xúc phạm, phân biệt đối xử, hoặc gây thù địch dưới bất kỳ hình thức nào.</li>
+                <li>Không spam, quảng cáo các server hoặc website khác trong chat.</li>
+                <li>Không mạo danh nhân viên (Staff) hoặc thành viên Ban Quản Trị (BQT) của VieMC.</li>
+                <li>Mọi tranh chấp nhỏ giữa người chơi nên được giải quyết hòa bình. Staff chỉ can thiệp khi có vi phạm luật rõ ràng.</li>
+            </ol>
+        </div>
+
+        <div class="rule-section">
+            <h2>2. Quy Tắc Kỹ Thuật & Cheating</h2>
+            <ol>
+                <li>Nghiêm cấm sử dụng bất kỳ phần mềm, client, hoặc mod gian lận (Hack Client, X-Ray Resource Packs, v.v.).</li>
+                <li>Không lợi dụng lỗi (Bugs) của game hoặc server để trục lợi hoặc phá hoại. Hãy báo cáo Bugs cho BQT ngay lập tức.</li>
+                <li>Không sử dụng các máy AFK (Anti-AFK machine) hoặc script tự động để hoạt động liên tục vượt quá giới hạn cho phép của Server.</li>
+            </ol>
+        </div>
+
+        <div class="rule-section">
+            <h2>3. Quy Tắc Xây Dựng & Sinh tồn (Survival)</h2>
+            <ol>
+                <li>Không được phá hoại công trình của người chơi khác (Griefing), ngay cả khi khu vực đó không được bảo vệ.</li>
+                <li>Không quây/trụ tại khu vực Spawn hoặc các công trình công cộng của server.</li>
+                <li>Đảm bảo các bẫy hoặc máy farm của bạn không gây lag nghiêm trọng cho server. BQT có quyền xóa các công trình gây lag.</li>
+                <li>Không được xây dựng hình ảnh hoặc nội dung tục tĩu.</li>
+            </ol>
+        </div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: var(--color-background-secondary); border-radius: 10px; border-left: 5px solid var(--color-primary);">
+            <p><strong>Lưu ý:</strong> Ban Quản Trị có quyền ban/kick người chơi ngay lập tức nếu hành vi đó được coi là gây hại đến server, ngay cả khi hành vi đó chưa được liệt kê chi tiết trong danh sách này.</p>
+        </div>
+    </main>
+    <div id="custom-alert-overlay">
+        <div id="custom-alert-box">
+            <p id="custom-alert-message"></p>
+            <button id="custom-alert-ok" class="btn">OK</button>
+        </div>
+    </div>
+    <footer class="site-footer">
+    <div class="footer-deco">
+    ༺ ⚔️ VieMC ⚔️ ༻
+    </div>
+    <div class="footer-content">
+        <div class="footer-col brand-col">
+            <h3>VieMC ☁️</h3>
+            <p>Thế giới khối vuông siêu đáng yêu đang chờ bạn khám phá!</p>
+            <div class="ip-badge">
+                <span>IP: play.viemc.net</span>
+            </div>
+        </div>
+
+        <div class="footer-col links-col">
+            <h4>Khám Phá</h4>
+            <a href="index.html">🏠 Trang Chủ</a>
+            <a href="blog.html">📰 Tin Tức</a>
+            <a href="rules.html">📜 Luật Lệ</a>
+        </div>
+
+        <div class="footer-col social-col">
+            <h4>Kết Nối</h4>
+            <a href="#" class="social-link discord">👾 Discord</a>
+            <a href="#" class="social-link facebook">📘 Facebook</a>
+            <a href="#" class="social-link tiktok">🎵 TikTok</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Code & Design by <b>VieMC Team (VenertMoonk5)</b></p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 VieMC Network. All rights reserved.</p>
+    </div>
+    <span class="version-display">v1.0.0</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

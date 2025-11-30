@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>VieMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">VieMC ☁️</div>
+        <div class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="guide.html">Hướng Dẫn</a>
+            <a href="update-logs.html">Update Logs</a>
+            <a href="blog.html">Blog</a>
+            <a href="rules.html">Rules</a>
+            <a href="admin.html" id="nav-admin" style="display: none;">Admin Panel</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>📚 Cách tải & Chơi</h2>
+            <p>Làm theo các bước sau để tham gia VieMC nhé:</p>
+            <ul style="text-align: left; list-style: none; padding: 10px;">
+                <li style="margin-bottom: 15px;">
+                    <strong>Bước 1:</strong> Tải TLauncher hoặc Minecraft Launcher chính hãng.
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>Bước 2:</strong> Cài đặt phiên bản <strong>1.21.4</strong> (Optifine càng tốt).
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>Bước 3:</strong> Chọn Multiplayer -> Add Server.
+                </li>
+                <li>
+                    <strong>Bước 4:</strong> Nhập IP: <code>play.viemc.net</code> và chiến thôi!
+                </li>
+            </ul>
+            <a href="https://tlauncher.org/en/" target="_blank" class="btn">Tải TLauncher</a>
+        </div>
+    </div>
+    <div class="notification-bar" id="notification-bar">
+        <span class="notif-icon">📣</span>
+        <span id="notif-message"></span>
+        <span class="notif-close" id="notif-close">✕</span>
+    </div>
+    <footer class="site-footer">
+    <div class="footer-deco">
+    ༺ ⚔️ VieMC ⚔️ ༻
+    </div>
+    <div class="footer-content">
+        <div class="footer-col brand-col">
+            <h3>VieMC ☁️</h3>
+            <p>Thế giới khối vuông siêu đáng yêu đang chờ bạn khám phá!</p>
+            <div class="ip-badge">
+                <span>IP: play.viemc.net</span>
+            </div>
+        </div>
+
+        <div class="footer-col links-col">
+            <h4>Khám Phá</h4>
+            <a href="index.html">🏠 Trang Chủ</a>
+            <a href="blog.html">📰 Tin Tức</a>
+            <a href="rules.html">📜 Luật Lệ</a>
+        </div>
+
+        <div class="footer-col social-col">
+            <h4>Kết Nối</h4>
+            <a href="#" class="social-link discord">👾 Discord</a>
+            <a href="#" class="social-link facebook">📘 Facebook</a>
+            <a href="#" class="social-link tiktok">🎵 TikTok</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Code & Design by <b>VieMC Team (VenertMoonk5)</b></p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 VieMC Network. All rights reserved.</p>
+    </div>
+    <span class="version-display">v1.0.0</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

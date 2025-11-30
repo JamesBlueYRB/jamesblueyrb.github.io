@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>VieMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    </div>
+    <nav>
+        <div class="logo">VieMC ☁️</div>
+        <div class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="guide.html">Hướng Dẫn</a>
+            <a href="update-logs.html">Update Logs</a>
+            <a href="blog.html">Blog</a>
+            <a href="rules.html">Rules</a>
+            <a href="admin.html" id="nav-admin" style="display: none;">Admin Panel</a>
+
+            <div class="logged-in-container" id="logged-in-container" style="display: none;">
+                <span id="user-display"></span>
+                <button class="btn" id="btn-logout" style="padding: 8px 15px;">Đăng xuất</button>
+            </div>
+
+            <div class="auth-container">
+                <button class="btn" id="auth-btn">Tài khoản</button>
+                <div class="auth-dropdown" id="auth-dropdown">
+                    <div class="auth-tabs">
+                        <span class="auth-tab active" id="tab-login">Đăng nhập</span>
+                        <span class="auth-tab" id="tab-register">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form active" id="form-login">
+                        <input type="text" placeholder="Tên đăng nhập" id="login-user">
+                        <input type="password" placeholder="Mật khẩu" id="login-pass">
+                        <button class="btn" style="width: 100%;" id="btn-login">Đăng nhập</button>
+                    </div>
+
+                    <div class="auth-form" id="form-register">
+                        <input type="text" placeholder="Tên đăng nhập" id="reg-user">
+                        <input type="password" placeholder="Mật khẩu" id="reg-pass">
+                        <input type="password" placeholder="Nhập lại mật khẩu" id="reg-pass-confirm">
+                        <button class="btn" style="width: 100%;" id="btn-register">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="status">Online</div>
+            <h1>Chào mừng đến với VieMC</h1>
+            <p>Server Minecraft survival siêu cute, cộng đồng thân thiện và nhiều tính năng hấp dẫn.</p>
+            
+            <p style="font-size: 1.2rem; font-weight: 700;">IP: <span id="ip-box" style="cursor: pointer; color: #4fc3f7;">play.viemc.net</span></p>
+            <p style="font-size: 0.9rem; margin-top: -15px; color: #a0aec0;">(Nhấn để copy)</p>
+            
+            <p id="player-count" style="font-weight: 600;"></p>
+            
+            <a href="#" class="btn">Tham gia ngay</a>
+        </div>
+    </div>
+
+    <div class="chat-widget">
+        <button class="chat-btn" id="chat-btn">🤖</button>
+        <div class="chat-box" id="chat-box">
+            <div class="chat-header">Vie Chat AI</div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" placeholder="Hỏi AI..." id="chat-input">
+                <button id="chat-send">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-bar" id="notification-bar">
+        <span class="notif-icon">📣</span>
+        <span id="notif-message"></span>
+        <span class="notif-close" id="notif-close">✕</span>
+    </div>
+    <footer class="site-footer">
+    <div class="footer-deco">
+    ༺ ⚔️ VieMC ⚔️ ༻
+    </div>
+    <div class="footer-content">
+        <div class="footer-col brand-col">
+            <h3>VieMC ☁️</h3>
+            <p>Thế giới khối vuông siêu đáng yêu đang chờ bạn khám phá!</p>
+            <div class="ip-badge">
+                <span>IP: play.viemc.net</span>
+            </div>
+        </div>
+
+        <div class="footer-col links-col">
+            <h4>Khám Phá</h4>
+            <a href="index.html">🏠 Trang Chủ</a>
+            <a href="blog.html">📰 Tin Tức</a>
+            <a href="rules.html">📜 Luật Lệ</a>
+        </div>
+
+        <div class="footer-col social-col">
+            <h4>Kết Nối</h4>
+            <a href="#" class="social-link discord">👾 Discord</a>
+            <a href="#" class="social-link facebook">📘 Facebook</a>
+            <a href="#" class="social-link tiktok">🎵 TikTok</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Code & Design by <b>VieMC Team (VenertMoonk5)</b></p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 VieMC Network. All rights reserved.</p>
+    </div>
+    <span class="version-display">v1.0.0</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>VieMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">VieMC ☁️</div>
+        <div class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="guide.html">Hướng Dẫn</a>
+            <a href="update-logs.html">Update Logs</a>
+            <a href="blog.html">Blog</a>
+            <a href="rules.html">Rules</a>
+            <a href="admin.html" id="nav-admin" style="display: none;">Admin Panel</a>
+
+            <div class="logged-in-container" id="logged-in-container" style="display: none;">
+                <span id="user-display"></span>
+                <button class="btn" id="btn-logout" style="padding: 8px 15px;">Đăng xuất</button>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Vie Admin Panel</h1>
+
+        <div class="admin-controls">
+            <h2>Đăng Blog Mới</h2>
+            <input type="text" placeholder="Tiêu đề Blog" id="blog-title">
+            <textarea placeholder="Mô tả nội dung" id="blog-desc" rows="5"></textarea>
+            <input type="text" placeholder="URL Ảnh (hoặc chọn file)" id="blog-img-url">
+            <label>Upload Ảnh:</label>
+            <input type="file" accept="image/*" id="blog-img-file" style="margin-bottom: 20px;">
+            <button class="btn" id="post-blog" style="width: 100%;">Đăng Bài Viết</button>
+        </div>
+        
+        <div class="admin-controls">
+            <h2>Announce</h2>
+            <textarea placeholder="Nội dung thông báo" id="notif-msg" rows="2"></textarea>
+            <label>Thời gian hiển thị:</label>
+            <select id="notif-duration">
+                <option value="1">1 Giờ</option>
+                <option value="2">2 Giờ</option>
+                <option value="3">3 Giờ</option>
+                <option value="4">4 Giờ</option>
+                <option value="5">5 Giờ</option>
+                <option value="6">6 Giờ</option>
+                <option value="7">7 Giờ</option>
+                <option value="8">8 Giờ</option>
+                <option value="9">9 Giờ</option>
+                <option value="10">10 Giờ</option>
+                <option value="11">11 Giờ</option>
+                <option value="12">12 Giờ</option>
+                <option value="24">1 Ngày</option>
+                <option value="48">2 Ngày</option>
+                <option value="72">3 Ngày</option>
+                <option value="always">Luôn luôn</option>
+            </select>
+            <button class="btn" id="set-notif" style="width: 100%; margin-top: 15px;">Submit Annouce</button>
+            <button class="btn" id="delete-notif" style="width: 100%; margin-top: 10px; background: #ef4444;">Xóa Thông báo Hiện tại</button>
+        </div>
+        
+        <div class="admin-controls">
+            <h2>Blog List</h2>
+            <div id="admin-blog-list" class="blog-grid" style="margin-top: 20px;">
+                <p>Đang tải Blog...</p>
+            </div>
+        </div>
+    </div>
+    <section id="add-log-section" class="admin-section">
+    <h2>➕ Update Logs Admin</h2>
+    <form id="add-log-form">
+        <label for="log-title">Tiêu đề (Ví dụ: v1.3 - Tối ưu hiệu suất):</label>
+        <input type="text" id="log-title" required>
+
+        <label for="log-type">Phân loại:</label>
+        <select id="log-type" required>
+            <option value="added">Thêm mới (✨)</option>
+            <option value="fixed">Sửa lỗi (🔧)</option>
+            <option value="improved">Cải tiến (✅)</option>
+        </select>
+
+        <label for="log-description">Mô tả chi tiết (Từng mục xuống dòng):</label>
+        <textarea id="log-description" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Đăng Log</button>
+    </form>
+    </section>
+    <section id="manage-logs-section" class="admin-section" style="margin-top: 40px;">
+    <h2>📋 Manage Logs</h2>
+    <div id="logs-list-admin" class="log-container">
+        <p>Đang tải nhật ký cập nhật...</p>
+    </div>
+    </section>
+    <footer class="site-footer">
+    <div class="footer-deco">
+    ༺ ⚔️ VieMC ⚔️ ༻
+    </div>
+    <div class="footer-content">
+        <div class="footer-col brand-col">
+            <h3>VieMC ☁️</h3>
+            <p>Thế giới khối vuông siêu đáng yêu đang chờ bạn khám phá!</p>
+            <div class="ip-badge">
+                <span>IP: play.viemc.net</span>
+            </div>
+        </div>
+
+        <div class="footer-col links-col">
+            <h4>Khám Phá</h4>
+            <a href="index.html">🏠 Trang Chủ</a>
+            <a href="blog.html">📰 Tin Tức</a>
+            <a href="rules.html">📜 Luật Lệ</a>
+        </div>
+
+        <div class="footer-col social-col">
+            <h4>Kết Nối</h4>
+            <a href="#" class="social-link discord">👾 Discord</a>
+            <a href="#" class="social-link facebook">📘 Facebook</a>
+            <a href="#" class="social-link tiktok">🎵 TikTok</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Code & Design by <b>VieMC Team (VenertMoonk5)</b></p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 VieMC Network. All rights reserved.</p>
+    </div>
+    <span class="version-display">v1.0.0</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

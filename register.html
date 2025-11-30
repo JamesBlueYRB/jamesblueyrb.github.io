@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>VieMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    </div>
+    <nav>
+        <div class="logo">VieMC ☁️</div>
+        <div class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="guide.html">Hướng Dẫn</a>
+            <a href="login.html">Đăng Nhập</a>
+            <a href="register.html">Đăng Ký</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>📝 Đăng Ký Thành Viên</h2>
+            <form action="#" onsubmit="event.preventDefault(); alert('Đăng ký thành công (Giả lập)!'); window.location.href='login.html';">
+                <input type="text" placeholder="Tên ingame (Username)" required>
+                <input type="password" placeholder="Mật khẩu" required>
+                <input type="password" placeholder="Nhập lại mật khẩu" required>
+                <br><br>
+                <button type="submit" class="btn">Tạo Tài Khoản</button>
+            </form>
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                Đã có tài khoản? <a href="login.html" style="color: var(--accent-color);">Đăng nhập</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
