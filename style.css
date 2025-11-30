@@ -64,9 +64,12 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #29b6f6;
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 
 .glass-card {
@@ -1026,4 +1029,5 @@ select {
 #add-log-form button[type="submit"]:hover {
     background: var(--color-primary-dark);
 }
+
 
